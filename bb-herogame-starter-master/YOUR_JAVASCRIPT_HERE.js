@@ -28,3 +28,24 @@ function equipWeapon(Hero) {
         Hero.weapon = Hero.inventory[0]
     }
 }
+function displayStats() {
+    let statScrean = document.getElementById('stats')
+    const name = hero.name
+    const health = hero.health
+    const weapon = hero.weapon.type
+    const damage = hero.weapon.damage
+
+    let nameDiv = document.createElement('div')
+    let healthDiv = document.createElement('div')
+    let weaponDiv = document.createElement('div')
+
+    nameDiv.innerHTML = `Name: ${name}`
+    healthDiv.innerHTML = `Health: ${health}/10`
+    weaponDiv.innerHTML = `Weapon: ${weapon} (${damage} damage)`
+
+    statScrean.appendChild(nameDiv)
+    statScrean.appendChild(healthDiv)
+    statScrean.appendChild(weaponDiv)
+}
+
+displayStats()
