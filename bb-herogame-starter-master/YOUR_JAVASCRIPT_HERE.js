@@ -10,6 +10,10 @@ let hero = {
         damage: 2
     }
 }
+let enemy = {
+    health: 3,
+    damage: 2
+}
 
 function rest(Hero) {
     if (Hero.health === 10) {
@@ -57,5 +61,22 @@ function updateName() {
 
     displayStats()
 }
+function displayEnemyStats() {
+    let enemyStats = document.getElementById('enemyStats')
+    enemyStats.innerHTML = `Health: ${enemy.health}`
+}
+function atack() {
+    enemy.health = enemy.health - hero.weapon.damage
 
+    if (enemy.health <= 0) {
+        // kill enemy
+    } else {
+        hero.health = hero.health - enemy.damage
+    }
+    
+    displayStats()
+    displayEnemyStats()
+}
+
+displayEnemyStats()
 displayStats()

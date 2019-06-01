@@ -13,7 +13,7 @@
     <img id="inn" src="./img/inn.png" alt="inn" onclick="rest(hero)">
     <img id="dagger" src="./img/dagger.jpeg" alt="dagger" onclick="pickUpItem(hero, {type: 'dagger',damage: 2});document.getElementById('dagger').remove()">
     <img id="bag" src="./img/bag.jpeg" alt="bag" onclick="equipWeapon(hero)">
-    <div id="enemy">
+    <div id="enemy" onclick="atack()">
       <img src="./img/enemy.jpeg" alt="enemy">
       <span id="enemyStats"></span>
     </div>
