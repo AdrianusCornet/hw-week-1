@@ -14,10 +14,10 @@ let hero = {
 function rest(Hero) {
     if (Hero.health <= 10) {
         //alert(`${Hero.name} is completely healthy`)
+    }else{
+        Hero.health = 10
+        displayStats()
     }
-
-    Hero.health = 10
-
     return Hero
 }
 function pickUpItem(Hero, Weapon) {
@@ -26,10 +26,12 @@ function pickUpItem(Hero, Weapon) {
 function equipWeapon(Hero) {
     if (Hero.inventory.length) {
         Hero.weapon = Hero.inventory[0]
+        displayStats()
     }
 }
 function displayStats() {
     let statScrean = document.getElementById('stats')
+    statScrean.innerHTML = ''
     const name = hero.name
     const health = hero.health
     const weapon = hero.weapon.type
