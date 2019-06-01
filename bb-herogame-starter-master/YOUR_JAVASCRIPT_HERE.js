@@ -17,7 +17,7 @@ let enemy = {
 
 function rest(Hero) {
     if (Hero.health === 10) {
-        //alert(`${Hero.name} is completely healthy`)
+        alert(`${Hero.name} is completely healthy`)
     }
     displayStats()
     Hero.health = 10
