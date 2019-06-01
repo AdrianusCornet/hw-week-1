@@ -12,12 +12,11 @@ let hero = {
 }
 
 function rest(Hero) {
-    if (Hero.health <= 10) {
+    if (Hero.health === 10) {
         //alert(`${Hero.name} is completely healthy`)
-    }else{
-        Hero.health = 10
-        displayStats()
     }
+    displayStats()
+    Hero.health = 10
     return Hero
 }
 function pickUpItem(Hero, Weapon) {
@@ -52,6 +51,7 @@ function displayStats() {
 function updateName() {
     const input = document.getElementById('name')
     const newName = input.value
+    input.value = ''
 
     hero.name = newName
 
