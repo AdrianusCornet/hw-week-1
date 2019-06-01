@@ -69,7 +69,8 @@ function atack() {
     enemy.health = enemy.health - hero.weapon.damage
 
     if (enemy.health <= 0) {
-        // kill enemy
+        document.getElementById('enemy').remove()
+        return false
     } else {
         hero.health = hero.health - enemy.damage
     }
