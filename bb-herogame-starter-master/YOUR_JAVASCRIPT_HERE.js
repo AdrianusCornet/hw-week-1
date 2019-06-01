@@ -13,7 +13,7 @@ let hero = {
 
 function rest(Hero) {
     if (Hero.health <= 10) {
-        alert(`${Hero.name} is completely healthy`)
+        //alert(`${Hero.name} is completely healthy`)
     }
 
     Hero.health = 10
