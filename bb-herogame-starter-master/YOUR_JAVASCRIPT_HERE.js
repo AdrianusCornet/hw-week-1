@@ -22,7 +22,6 @@ function rest(Hero) {
 }
 function pickUpItem(Hero, Weapon) {
     Hero.inventory.push(Weapon)
-    return Hero
 }
 function equipWeapon() {
     
