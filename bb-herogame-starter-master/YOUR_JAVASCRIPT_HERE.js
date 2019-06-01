@@ -16,12 +16,12 @@ function rest(Hero) {
         alert(`${Hero.name} is completely healthy`)
     }
 
-    h.health = 10
+    Hero.health = 10
 
     return Hero
 }
 function pickUpItem(Hero, Weapon) {
-    
+    Hero.inventory.push(Weapon)
 }
 function equipWeapon() {
     
