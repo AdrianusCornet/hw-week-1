@@ -49,5 +49,13 @@ function displayStats() {
     statScrean.appendChild(healthDiv)
     statScrean.appendChild(weaponDiv)
 }
+function updateName() {
+    const input = document.getElementById('name')
+    const newName = input.value
+
+    hero.name = newName
+
+    displayStats()
+}
 
 displayStats()
