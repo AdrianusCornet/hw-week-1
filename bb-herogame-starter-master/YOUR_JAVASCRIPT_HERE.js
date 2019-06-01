@@ -11,8 +11,14 @@ let hero = {
     }
 }
 
-function rest() {
-    
+function rest(h) {
+    if (h.health <= 10) {
+        alert(`${h.name} is completely healthy`)
+    }
+
+    h.health = 10
+
+    return h
 }
 function pickUpItem() {
     
