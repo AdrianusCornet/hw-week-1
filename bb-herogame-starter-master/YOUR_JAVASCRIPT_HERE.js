@@ -23,6 +23,8 @@ function rest(Hero) {
 function pickUpItem(Hero, Weapon) {
     Hero.inventory.push(Weapon)
 }
-function equipWeapon() {
-    
+function equipWeapon(Hero) {
+    if (Hero.inventory.length) {
+        Hero.weapon = Hero.inventory[0]
+    }
 }
