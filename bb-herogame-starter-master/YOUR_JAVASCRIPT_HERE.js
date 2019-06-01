@@ -19,8 +19,8 @@ function rest(Hero) {
     if (Hero.health === 10) {
         alert(`${Hero.name} is completely healthy`)
     }
-    displayStats()
     Hero.health = 10
+    displayStats()
     return Hero
 }
 function pickUpItem(Hero, Weapon) {
