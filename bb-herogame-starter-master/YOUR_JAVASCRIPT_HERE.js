@@ -6,7 +6,17 @@ let hero = {
     inventory: [],
     health: 10,
     weapon: {
-        type: 'wapon-1',
+        type: 'weapon-1',
         damage: 2
     }
+}
+
+function rest() {
+    
+}
+function pickUpItem() {
+    
+}
+function equipWeapon() {
+    
 }
